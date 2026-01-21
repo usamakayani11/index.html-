@@ -1,68 +1,305 @@
-<!-- PROJECTS -->
-<section>
-  <div class="section-title">
-    <h3>Portfolio</h3>
-    <h2>Selected Projects</h2>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usama Bin Saeed | Web, SEO & Digital Marketing Portfolio</title>
 
-  <div class="grid">
+<style>
+:root {
+  --bg:#020617;
+  --glass:rgba(255,255,255,.06);
+  --border:rgba(255,255,255,.12);
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --accent:#38bdf8;
+  --accent2:#a78bfa;
+}
 
-    <div class="card">
-      <h3>Professional Portfolio Website</h3>
-      <p>
-        A modern, responsive portfolio website built from scratch to showcase
-        my web development, SEO, and design skills.
-      </p>
-      <ul>
-        <li>HTML5, CSS3 (modern layout & animations)</li>
-        <li>Responsive and mobile-first design</li>
-        <li>SEO-friendly structure</li>
-        <li>Deployed using GitHub Pages</li>
-      </ul>
-    </div>
+*{box-sizing:border-box}
 
-    <div class="card">
-      <h3>WordPress Business Website</h3>
-      <p>
-        Designed and maintained a WordPress website for a service-based business
-        with a focus on usability, performance, and SEO.
-      </p>
-      <ul>
-        <li>WordPress CMS & Elementor</li>
-        <li>On-page and technical SEO optimisation</li>
-        <li>Content publishing & layout consistency</li>
-        <li>Website maintenance & updates</li>
-      </ul>
-    </div>
+body{
+  margin:0;
+  font-family:Inter,system-ui,sans-serif;
+  background:
+    radial-gradient(900px 400px at 10% -10%, rgba(56,189,248,.15), transparent),
+    radial-gradient(800px 300px at 90% 10%, rgba(167,139,250,.12), transparent),
+    var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
 
-    <div class="card">
-      <h3>SEO & Content Optimisation Project</h3>
-      <p>
-        Improved website visibility through structured content, keyword research,
-        and technical SEO improvements.
-      </p>
-      <ul>
-        <li>Keyword research & content planning</li>
-        <li>Google Search Console analysis</li>
-        <li>Internal linking & site structure</li>
-        <li>SEO-friendly blog publishing</li>
-      </ul>
-    </div>
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px 100px;
+}
 
-    <div class="card">
-      <h3>Software & Academic Projects</h3>
-      <p>
-        Built multiple academic and personal projects demonstrating software
-        development and problem-solving skills.
-      </p>
-      <ul>
-        <li>Zombie Wave game (Unity, C#)</li>
-        <li>Web apps using HTML, CSS, JavaScript & React</li>
-        <li>GUI & HCI-focused projects</li>
-        <li>Data analysis & research work</li>
-      </ul>
-    </div>
+/* HERO */
+.hero{
+  text-align:center;
+  padding:120px 20px 90px;
+}
 
+.hero h1{
+  font-size:clamp(44px,6vw,64px);
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;
+  color:transparent;
+  margin-bottom:14px;
+}
+
+.hero h2{
+  font-weight:400;
+  font-size:22px;
+  color:var(--muted);
+  margin-bottom:26px;
+}
+
+.hero p{
+  max-width:780px;
+  margin:auto;
+  font-size:18px;
+  color:var(--muted);
+}
+
+.meta{
+  margin-top:34px;
+  display:flex;
+  justify-content:center;
+  gap:26px;
+  flex-wrap:wrap;
+  font-size:14px;
+  color:var(--muted);
+}
+
+/* SECTIONS */
+section{margin-top:120px}
+
+.section-title{
+  margin-bottom:40px;
+  max-width:620px;
+}
+
+.section-title h3{
+  font-size:13px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:8px;
+}
+
+.section-title h2{
+  font-size:34px;
+  margin:0;
+}
+
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:32px;
+  backdrop-filter:blur(14px);
+  transition:.4s ease;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 30px 60px rgba(0,0,0,.4);
+}
+
+.card h3{margin-top:0}
+
+ul{padding-left:18px;margin:0}
+li{margin:10px 0;color:var(--muted)}
+
+footer{
+  margin-top:140px;
+  padding-top:50px;
+  border-top:1px solid var(--border);
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+}
+
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Usama Bin Saeed</h1>
+  <h2>Web Developer · SEO & Digital Marketing Specialist</h2>
+  <p>
+    I build, optimise, and grow websites through clean development,
+    WordPress implementation, SEO strategy, and data-driven digital marketing.
+  </p>
+
+  <div class="meta">
+    <span>📍 Crewe / Sheffield, UK</span>
+    <span>🎓 BSc Software Engineering</span>
+    <span>💼 SEO · Web · E-commerce</span>
   </div>
 </section>
 
+<!-- ABOUT -->
+<section>
+  <div class="section-title">
+    <h3>Overview</h3>
+    <h2>Professional Summary</h2>
+  </div>
+  <div class="card">
+    <p>
+      I am a motivated and detail-oriented SEO and Digital Marketing professional
+      with hands-on experience in website optimisation, content strategy,
+      keyword research, and campaign management.
+    </p>
+    <p>
+      I work confidently with tools such as Google Search Console, Ahrefs,
+      Helium 10, and Google Trends, and have experience managing WordPress
+      websites, social media content, and e-commerce platforms.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <div class="section-title">
+    <h3>Expertise</h3>
+    <h2>Core Skills</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>SEO & Digital Marketing</h3>
+      <ul>
+        <li>On-Page & Off-Page SEO</li>
+        <li>Keyword Research & Content Strategy</li>
+        <li>Google Search Console & Google Trends</li>
+        <li>Ahrefs, Helium 10, Zik Analytics</li>
+        <li>AI-friendly & semantic content</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Web & CMS Development</h3>
+      <ul>
+        <li>WordPress, WooCommerce, Shopify</li>
+        <li>HTML, CSS, JavaScript, React</li>
+        <li>Elementor & ClickFunnels</li>
+        <li>Website optimisation & maintenance</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>E-commerce & Paid Campaigns</h3>
+      <ul>
+        <li>Amazon Seller Central & FBA</li>
+        <li>eBay account & listing management</li>
+        <li>PPC campaign management</li>
+        <li>Product SEO & A+ Content</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+  <div class="section-title">
+    <h3>Professional</h3>
+    <h2>Experience</h2>
+  </div>
+
+  <div class="card">
+    <h3>SEO & Social Media Assistant (Part-Time)</h3>
+    <p><strong>Kash Legal Services · Sheffield, UK</strong></p>
+    <ul>
+      <li>Managed daily social media content</li>
+      <li>Handled local SEO using Google Search Console</li>
+      <li>Performed keyword research & blog writing</li>
+      <li>Improved visibility through technical & on-page SEO</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <div class="section-title">
+    <h3>Work</h3>
+    <h2>Projects & Practical Experience</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Web & Software Projects</h3>
+      <ul>
+        <li>Built multiple websites using HTML, CSS, JS & React</li>
+        <li>Developed “Zombie Wave” game using Unity (C#)</li>
+        <li>Designed GUI projects for HCI</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Research & Technology</h3>
+      <ul>
+        <li>Data analysis & research paper in Data Science</li>
+        <li>Research in AI, IoT & Blockchain</li>
+        <li>Full-cycle technical project management</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section>
+  <div class="section-title">
+    <h3>Academic</h3>
+    <h2>Education</h2>
+  </div>
+  <div class="card">
+    <h3>BSc Software Engineering</h3>
+    <p>Staffordshire University, Stoke-on-Trent, UK</p>
+    <p class="muted">Completed 2025</p>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+  <div class="section-title">
+    <h3>Credentials</h3>
+    <h2>Certifications</h2>
+  </div>
+  <div class="card">
+    <ul>
+      <li>Beginner SEO — SEMrush</li>
+      <li>On-Page SEO Essentials — SEMrush</li>
+      <li>SEO & Content Playbook for Agencies — Andy Crestodina</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer>
+  <p>
+    📧 usamakayani70@gmail.com · 📞 +44 7919 773223<br>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/usama-bin-saeed" target="_blank">
+      linkedin.com/in/usama-bin-saeed
+    </a>
+  </p>
+</footer>
+
+</div>
+</body>
+</html>
