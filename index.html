@@ -3,173 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Usama Bin Saeed | Web Developer & SEO</title>
+<title>Usama Bin Saeed | Web, SEO & Digital Marketing Portfolio</title>
 
 <style>
 :root {
-  --bg: #020617;
-  --glass: rgba(255,255,255,0.06);
-  --border: rgba(255,255,255,0.12);
-  --text: #e5e7eb;
-  --muted: #94a3b8;
-  --accent: #38bdf8;
-  --accent-2: #a78bfa;
+  --bg:#020617;
+  --glass:rgba(255,255,255,.06);
+  --border:rgba(255,255,255,.12);
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --accent:#38bdf8;
+  --accent2:#a78bfa;
 }
 
-* { box-sizing: border-box; }
+*{box-sizing:border-box}
 
-body {
-  margin: 0;
-  font-family: "Inter", system-ui, sans-serif;
+body{
+  margin:0;
+  font-family:Inter,system-ui,sans-serif;
   background:
     radial-gradient(900px 400px at 10% -10%, rgba(56,189,248,.15), transparent),
     radial-gradient(800px 300px at 90% 10%, rgba(167,139,250,.12), transparent),
     var(--bg);
-  color: var(--text);
-  line-height: 1.7;
+  color:var(--text);
+  line-height:1.7;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 20px 100px;
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px 100px;
 }
 
 /* HERO */
-.hero {
-  text-align: center;
-  padding: 120px 20px 80px;
+.hero{
+  text-align:center;
+  padding:120px 20px 90px;
 }
 
-.hero h1 {
-  font-size: clamp(42px, 6vw, 64px);
-  margin-bottom: 14px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  -webkit-background-clip: text;
-  color: transparent;
+.hero h1{
+  font-size:clamp(44px,6vw,64px);
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;
+  color:transparent;
+  margin-bottom:14px;
 }
 
-.hero h2 {
-  font-size: 22px;
-  font-weight: 400;
-  color: var(--muted);
-  margin-bottom: 28px;
+.hero h2{
+  font-weight:400;
+  font-size:22px;
+  color:var(--muted);
+  margin-bottom:26px;
 }
 
-.hero p {
-  max-width: 760px;
-  margin: auto;
-  font-size: 18px;
-  color: var(--muted);
+.hero p{
+  max-width:780px;
+  margin:auto;
+  font-size:18px;
+  color:var(--muted);
 }
 
-.hero .meta {
-  margin-top: 32px;
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  flex-wrap: wrap;
-  font-size: 14px;
-  color: var(--muted);
+.meta{
+  margin-top:34px;
+  display:flex;
+  justify-content:center;
+  gap:26px;
+  flex-wrap:wrap;
+  font-size:14px;
+  color:var(--muted);
 }
 
-/* SECTION */
-section {
-  margin-top: 120px;
+/* SECTIONS */
+section{margin-top:120px}
+
+.section-title{
+  margin-bottom:40px;
+  max-width:620px;
 }
 
-.section-title {
-  margin-bottom: 40px;
-  max-width: 600px;
+.section-title h3{
+  font-size:13px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:8px;
 }
 
-.section-title h3 {
-  font-size: 13px;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 8px;
-}
-
-.section-title h2 {
-  font-size: 34px;
-  margin: 0;
+.section-title h2{
+  font-size:34px;
+  margin:0;
 }
 
 /* CARDS */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
 }
 
-.card {
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,.08),
-    rgba(255,255,255,.02)
-  );
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 32px;
-  backdrop-filter: blur(14px);
-  transition: transform .4s ease, box-shadow .4s ease;
+.card{
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:32px;
+  backdrop-filter:blur(14px);
+  transition:.4s ease;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(0,0,0,.4);
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 30px 60px rgba(0,0,0,.4);
 }
 
-.card h3 {
-  margin-top: 0;
-  margin-bottom: 14px;
+.card h3{margin-top:0}
+
+ul{padding-left:18px;margin:0}
+li{margin:10px 0;color:var(--muted)}
+
+footer{
+  margin-top:140px;
+  padding-top:50px;
+  border-top:1px solid var(--border);
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
 }
 
-.card p,
-.card li {
-  color: var(--muted);
-}
-
-ul {
-  padding-left: 18px;
-  margin: 0;
-}
-
-li {
-  margin: 10px 0;
-}
-
-/* EXPERIENCE */
-.timeline {
-  display: grid;
-  gap: 30px;
-}
-
-/* FOOTER */
-footer {
-  margin-top: 140px;
-  padding-top: 50px;
-  border-top: 1px solid var(--border);
-  text-align: center;
-  color: var(--muted);
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* RESPONSIVE */
-@media(max-width: 768px) {
-  .hero {
-    padding-top: 90px;
-  }
-}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 </style>
 </head>
 
@@ -179,34 +140,35 @@ a:hover {
 <!-- HERO -->
 <section class="hero">
   <h1>Usama Bin Saeed</h1>
-  <h2>Web Developer · WordPress Specialist · SEO-Focused Builder</h2>
+  <h2>Web Developer · SEO & Digital Marketing Specialist</h2>
   <p>
-    I design and build modern, high-quality websites with a strong focus on
-    WordPress development, clean code, and search-engine optimisation.
+    I build, optimise, and grow websites through clean development,
+    WordPress implementation, SEO strategy, and data-driven digital marketing.
   </p>
 
   <div class="meta">
-    <span>📍 Nottingham, United Kingdom</span>
-    <span>🎓 BSc Computer Science</span>
-    <span>💼 1+ Year Practical Experience</span>
+    <span>📍 Crewe / Sheffield, UK</span>
+    <span>🎓 BSc Software Engineering</span>
+    <span>💼 SEO · Web · E-commerce</span>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section>
   <div class="section-title">
-    <h3>Who I Am</h3>
-    <h2>About Me</h2>
+    <h3>Overview</h3>
+    <h2>Professional Summary</h2>
   </div>
-
   <div class="card">
     <p>
-      I am a graduate web developer with hands-on experience working on
-      WordPress websites, content publishing, and SEO-driven optimisation.
+      I am a motivated and detail-oriented SEO and Digital Marketing professional
+      with hands-on experience in website optimisation, content strategy,
+      keyword research, and campaign management.
     </p>
     <p>
-      My approach focuses on clean structure, responsive layouts, and
-      long-term maintainability rather than quick fixes or shortcuts.
+      I work confidently with tools such as Google Search Console, Ahrefs,
+      Helium 10, and Google Trends, and have experience managing WordPress
+      websites, social media content, and e-commerce platforms.
     </p>
   </div>
 </section>
@@ -214,35 +176,39 @@ a:hover {
 <!-- SKILLS -->
 <section>
   <div class="section-title">
-    <h3>What I Do</h3>
+    <h3>Expertise</h3>
     <h2>Core Skills</h2>
   </div>
 
   <div class="grid">
     <div class="card">
-      <h3>Web Development</h3>
+      <h3>SEO & Digital Marketing</h3>
       <ul>
-        <li>HTML5 & CSS3 (semantic, accessible)</li>
-        <li>Responsive & mobile-first design</li>
-        <li>Cross-browser testing & QA</li>
+        <li>On-Page & Off-Page SEO</li>
+        <li>Keyword Research & Content Strategy</li>
+        <li>Google Search Console & Google Trends</li>
+        <li>Ahrefs, Helium 10, Zik Analytics</li>
+        <li>AI-friendly & semantic content</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>WordPress</h3>
+      <h3>Web & CMS Development</h3>
       <ul>
-        <li>Custom page builds & publishing</li>
-        <li>Theme customisation & maintenance</li>
-        <li>Plugin updates & staging workflows</li>
+        <li>WordPress, WooCommerce, Shopify</li>
+        <li>HTML, CSS, JavaScript, React</li>
+        <li>Elementor & ClickFunnels</li>
+        <li>Website optimisation & maintenance</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>SEO & Optimisation</h3>
+      <h3>E-commerce & Paid Campaigns</h3>
       <ul>
-        <li>On-page & technical SEO</li>
-        <li>Internal linking & structure</li>
-        <li>Entity-based & semantic SEO</li>
+        <li>Amazon Seller Central & FBA</li>
+        <li>eBay account & listing management</li>
+        <li>PPC campaign management</li>
+        <li>Product SEO & A+ Content</li>
       </ul>
     </div>
   </div>
@@ -255,14 +221,42 @@ a:hover {
     <h2>Experience</h2>
   </div>
 
-  <div class="timeline">
+  <div class="card">
+    <h3>SEO & Social Media Assistant (Part-Time)</h3>
+    <p><strong>Kash Legal Services · Sheffield, UK</strong></p>
+    <ul>
+      <li>Managed daily social media content</li>
+      <li>Handled local SEO using Google Search Console</li>
+      <li>Performed keyword research & blog writing</li>
+      <li>Improved visibility through technical & on-page SEO</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <div class="section-title">
+    <h3>Work</h3>
+    <h2>Projects & Practical Experience</h2>
+  </div>
+
+  <div class="grid">
     <div class="card">
-      <h3>WordPress Web Developer & SEO</h3>
-      <p>
-        Built and maintained WordPress websites, published SEO-optimised
-        content, applied technical SEO best practices, and improved site
-        structure and performance.
-      </p>
+      <h3>Web & Software Projects</h3>
+      <ul>
+        <li>Built multiple websites using HTML, CSS, JS & React</li>
+        <li>Developed “Zombie Wave” game using Unity (C#)</li>
+        <li>Designed GUI projects for HCI</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Research & Technology</h3>
+      <ul>
+        <li>Data analysis & research paper in Data Science</li>
+        <li>Research in AI, IoT & Blockchain</li>
+        <li>Full-cycle technical project management</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -273,20 +267,36 @@ a:hover {
     <h3>Academic</h3>
     <h2>Education</h2>
   </div>
-
   <div class="card">
-    <h3>BSc Computer Science</h3>
-    <p>Staffordshire University, United Kingdom</p>
+    <h3>BSc Software Engineering</h3>
+    <p>Staffordshire University, Stoke-on-Trent, UK</p>
     <p class="muted">Completed 2025</p>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- CERTIFICATIONS -->
+<section>
+  <div class="section-title">
+    <h3>Credentials</h3>
+    <h2>Certifications</h2>
+  </div>
+  <div class="card">
+    <ul>
+      <li>Beginner SEO — SEMrush</li>
+      <li>On-Page SEO Essentials — SEMrush</li>
+      <li>SEO & Content Playbook for Agencies — Andy Crestodina</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <footer>
   <p>
-    Open to junior / graduate roles, agency work, and freelance projects.<br>
-    Email:
-    <a href="mailto:usamakayani70@gmail.com">usamakayani70@gmail.com</a>
+    📧 usamakayani70@gmail.com · 📞 +44 7919 773223<br>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/usama-bin-saeed" target="_blank">
+      linkedin.com/in/usama-bin-saeed
+    </a>
   </p>
 </footer>
 
