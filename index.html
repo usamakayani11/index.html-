@@ -1,119 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Designer | Home</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f6f8;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usama Bin Saeed | Web Developer, WordPress & SEO</title>
 
-        header {
-            background-color: #0a2540;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #1e293b;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+    * { box-sizing: border-box; }
 
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #020617, #020617);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 32px 20px 60px;
+    }
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-        .card {
-            background: #fff;
-            padding: 25px;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+    header h1 {
+      font-size: clamp(32px, 5vw, 46px);
+      margin-bottom: 10px;
+    }
 
-        .card h3 {
-            margin-top: 0;
-        }
+    header p {
+      color: var(--muted);
+      max-width: 720px;
+      margin: auto;
+      font-size: 18px;
+    }
 
-        footer {
-            background-color: #0a2540;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
+    .info {
+      margin-top: 20px;
+      font-size: 14px;
+      color: var(--muted);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background-color: #2563eb;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-    </style>
+    section {
+      margin-top: 70px;
+    }
+
+    h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px;
+      transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+      box-shadow: 0 20px 40px rgba(56,189,248,.15);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 8px 0;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="container">
 
-<header>
-    <h1>Professional Web Designer</h1>
-    <p>Modern, responsive and user-friendly websites</p>
-    <a href="#contact" class="btn">Contact Me</a>
-</header>
+    <!-- HERO -->
+    <header>
+      <h1>Usama Bin Saeed</h1>
+      <p>
+        Web Developer specialising in WordPress, SEO, and performance-focused websites.
+        I build clean, responsive, and search-engine-friendly web experiences.
+      </p>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a web designer specialising in clean, modern and mobile-friendly websites.
-        I help businesses and professionals build a strong online presence.
-    </p>
-</section>
+      <div class="info">
+        <span>📍 Nottingham, United Kingdom</span>
+        <span>💼 Web Development · WordPress · SEO</span>
+        <span>🎓 BSc Computer Science</span>
+      </div>
+    </header>
 
-<section>
-    <h2>My Services</h2>
-    <div class="services">
+    <!-- ABOUT -->
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am a graduate web developer with over one year of hands-on experience working with
+          WordPress websites, content publishing, and SEO-focused optimisation.
+        </p>
+        <p>
+          My work includes building pages using existing design systems, maintaining live websites,
+          applying technical SEO best practices, and ensuring strong performance and accessibility
+          across devices.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Core Skills</h2>
+      <div class="grid">
         <div class="card">
-            <h3>Website Design</h3>
-            <p>Custom website designs tailored to your business needs.</p>
+          <h3>Web Development</h3>
+          <ul>
+            <li>HTML5 & CSS3 (semantic, clean markup)</li>
+            <li>Responsive & mobile-first layouts</li>
+            <li>Performance & layout QA</li>
+            <li>Cross-browser testing</li>
+          </ul>
         </div>
+
         <div class="card">
-            <h3>Responsive Design</h3>
-            <p>Websites that work perfectly on mobile, tablet and desktop.</p>
+          <h3>WordPress</h3>
+          <ul>
+            <li>Custom page builds & content publishing</li>
+            <li>Theme customisation & maintenance</li>
+            <li>Plugin updates & staging environments</li>
+            <li>SEO-friendly formatting</li>
+          </ul>
         </div>
+
         <div class="card">
-            <h3>Website Maintenance</h3>
-            <p>Updates, fixes and ongoing website support.</p>
+          <h3>SEO & Optimisation</h3>
+          <ul>
+            <li>On-page & technical SEO</li>
+            <li>Internal linking & content structure</li>
+            <li>Entity-based & semantic SEO</li>
+            <li>Google Search Console basics</li>
+          </ul>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-    <p>Phone: +44 0000 000000</p>
-</section>
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Experience</h2>
+      <div class="card">
+        <strong>WordPress Web Developer & SEO (Freelance / Part-Time)</strong>
+        <ul>
+          <li>Built and maintained WordPress websites for service-based businesses</li>
+          <li>Published SEO-optimised blogs, case studies, and service pages</li>
+          <li>Performed HTML/CSS tweaks and layout updates</li>
+          <li>Supported ongoing technical SEO hygiene</li>
+        </ul>
+      </div>
+    </section>
 
-<footer>
-    <p>© 2026 Web Designer. All rights reserved.</p>
-</footer>
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <strong>BSc Computer Science</strong><br />
+        Staffordshire University, United Kingdom<br />
+        <span style="color: var(--muted);">Completed 2025</span>
+      </div>
+    </section>
 
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Open to junior / graduate roles, agency work, and freelance opportunities.<br />
+        Email: <a href="mailto:usamakayani70@gmail.com">usamakayani70@gmail.com</a>
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
+
