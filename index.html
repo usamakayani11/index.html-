@@ -1,256 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Usama Bin Saeed | Web Developer & SEO Specialist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usama Bin Saeed | Web Developer & SEO</title>
 
-  <style>
-    :root {
-      --bg: #020617;
-      --card: #020617;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --border: #1e293b;
-    }
+<style>
+:root {
+  --bg: #020617;
+  --glass: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.12);
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-2: #a78bfa;
+}
 
-    * { box-sizing: border-box; }
+* { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(180deg, #020617, #020617);
-      color: var(--text);
-      line-height: 1.7;
-    }
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background:
+    radial-gradient(900px 400px at 10% -10%, rgba(56,189,248,.15), transparent),
+    radial-gradient(800px 300px at 90% 10%, rgba(167,139,250,.12), transparent),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 32px 20px 80px;
-    }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px 100px;
+}
 
-    /* HERO */
-    .hero {
-      text-align: center;
-      padding: 80px 20px 60px;
-    }
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px;
+}
 
-    .hero h1 {
-      font-size: clamp(36px, 5vw, 52px);
-      margin-bottom: 14px;
-    }
+.hero h1 {
+  font-size: clamp(42px, 6vw, 64px);
+  margin-bottom: 14px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
-    .hero h2 {
-      font-size: 20px;
-      font-weight: normal;
-      color: var(--muted);
-      margin-bottom: 22px;
-    }
+.hero h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
 
-    .hero p {
-      max-width: 760px;
-      margin: auto;
-      font-size: 18px;
-      color: var(--muted);
-    }
+.hero p {
+  max-width: 760px;
+  margin: auto;
+  font-size: 18px;
+  color: var(--muted);
+}
 
-    .meta {
-      margin-top: 22px;
-      font-size: 14px;
-      color: var(--muted);
-      display: flex;
-      justify-content: center;
-      gap: 22px;
-      flex-wrap: wrap;
-    }
+.hero .meta {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--muted);
+}
 
-    /* SECTIONS */
-    section {
-      margin-top: 90px;
-    }
+/* SECTION */
+section {
+  margin-top: 120px;
+}
 
-    .section-title {
-      margin-bottom: 30px;
-    }
+.section-title {
+  margin-bottom: 40px;
+  max-width: 600px;
+}
 
-    .section-title h3 {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
+.section-title h3 {
+  font-size: 13px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
 
-    .section-title h2 {
-      font-size: 28px;
-      margin: 0;
-    }
+.section-title h2 {
+  font-size: 34px;
+  margin: 0;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 26px;
-    }
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
 
-    .card {
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px;
-      transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
-    }
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.08),
+    rgba(255,255,255,.02)
+  );
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  backdrop-filter: blur(14px);
+  transition: transform .4s ease, box-shadow .4s ease;
+}
 
-    .card:hover {
-      transform: translateY(-8px);
-      border-color: var(--accent);
-      box-shadow: 0 20px 45px rgba(56,189,248,.18);
-    }
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,.4);
+}
 
-    ul {
-      margin: 0;
-      padding-left: 18px;
-    }
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
 
-    li {
-      margin: 10px 0;
-      color: var(--muted);
-    }
+.card p,
+.card li {
+  color: var(--muted);
+}
 
-    footer {
-      margin-top: 100px;
-      padding-top: 40px;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-    }
+ul {
+  padding-left: 18px;
+  margin: 0;
+}
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
+li {
+  margin: 10px 0;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+/* EXPERIENCE */
+.timeline {
+  display: grid;
+  gap: 30px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 140px;
+  padding-top: 50px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .hero {
+    padding-top: 90px;
+  }
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
 
-    <!-- HERO -->
-    <section class="hero">
-      <h1>Usama Bin Saeed</h1>
-      <h2>Web Developer · WordPress Specialist · SEO-Focused Builder</h2>
-      <p>
-        I build modern, responsive websites with a strong focus on WordPress,
-        clean development practices, and search-engine optimisation.
-      </p>
-      <div class="meta">
-        <span>📍 Nottingham, UK</span>
-        <span>🎓 BSc Computer Science</span>
-        <span>💼 1+ Year Practical Experience</span>
-      </div>
-    </section>
+<!-- HERO -->
+<section class="hero">
+  <h1>Usama Bin Saeed</h1>
+  <h2>Web Developer · WordPress Specialist · SEO-Focused Builder</h2>
+  <p>
+    I design and build modern, high-quality websites with a strong focus on
+    WordPress development, clean code, and search-engine optimisation.
+  </p>
 
-    <!-- ABOUT -->
-    <section>
-      <div class="section-title">
-        <h3>Introduction</h3>
-        <h2>About Me</h2>
-      </div>
-      <div class="card">
-        <p>
-          I am a graduate web developer with hands-on experience building,
-          maintaining, and optimising WordPress websites for service-based
-          and B2B use cases.
-        </p>
-        <p>
-          My work spans structured page builds, content publishing,
-          technical SEO hygiene, and performance-focused improvements.
-          I value clean markup, consistency, and long-term maintainability.
-        </p>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section>
-      <div class="section-title">
-        <h3>Capabilities</h3>
-        <h2>Core Skills</h2>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <h3>Web Development</h3>
-          <ul>
-            <li>HTML5 & CSS3 (semantic, accessible markup)</li>
-            <li>Responsive & mobile-first layouts</li>
-            <li>Cross-browser testing & QA</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>WordPress</h3>
-          <ul>
-            <li>Custom page creation & content publishing</li>
-            <li>Theme customisation & maintenance</li>
-            <li>Plugin updates & staging workflows</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>SEO & Optimisation</h3>
-          <ul>
-            <li>On-page & technical SEO</li>
-            <li>Internal linking & content structure</li>
-            <li>Entity-based & semantic SEO</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section>
-      <div class="section-title">
-        <h3>Background</h3>
-        <h2>Experience</h2>
-      </div>
-      <div class="card">
-        <strong>WordPress Web Developer & SEO (Freelance / Part-Time)</strong>
-        <ul>
-          <li>Built and maintained WordPress websites for service businesses</li>
-          <li>Published SEO-optimised blogs, case studies, and service pages</li>
-          <li>Applied technical SEO best practices</li>
-          <li>Performed HTML/CSS layout improvements</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section>
-      <div class="section-title">
-        <h3>Academic</h3>
-        <h2>Education</h2>
-      </div>
-      <div class="card">
-        <strong>BSc Computer Science</strong><br />
-        Staffordshire University, UK<br />
-        <span style="color: var(--muted);">Completed 2025</span>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <footer>
-      <p>
-        Open to junior / graduate roles, agency work, and freelance projects.<br />
-        Email:
-        <a href="mailto:usamakayani70@gmail.com">usamakayani70@gmail.com</a>
-      </p>
-    </footer>
-
+  <div class="meta">
+    <span>📍 Nottingham, United Kingdom</span>
+    <span>🎓 BSc Computer Science</span>
+    <span>💼 1+ Year Practical Experience</span>
   </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <div class="section-title">
+    <h3>Who I Am</h3>
+    <h2>About Me</h2>
+  </div>
+
+  <div class="card">
+    <p>
+      I am a graduate web developer with hands-on experience working on
+      WordPress websites, content publishing, and SEO-driven optimisation.
+    </p>
+    <p>
+      My approach focuses on clean structure, responsive layouts, and
+      long-term maintainability rather than quick fixes or shortcuts.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <div class="section-title">
+    <h3>What I Do</h3>
+    <h2>Core Skills</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Web Development</h3>
+      <ul>
+        <li>HTML5 & CSS3 (semantic, accessible)</li>
+        <li>Responsive & mobile-first design</li>
+        <li>Cross-browser testing & QA</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>WordPress</h3>
+      <ul>
+        <li>Custom page builds & publishing</li>
+        <li>Theme customisation & maintenance</li>
+        <li>Plugin updates & staging workflows</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>SEO & Optimisation</h3>
+      <ul>
+        <li>On-page & technical SEO</li>
+        <li>Internal linking & structure</li>
+        <li>Entity-based & semantic SEO</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+  <div class="section-title">
+    <h3>Professional</h3>
+    <h2>Experience</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="card">
+      <h3>WordPress Web Developer & SEO</h3>
+      <p>
+        Built and maintained WordPress websites, published SEO-optimised
+        content, applied technical SEO best practices, and improved site
+        structure and performance.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section>
+  <div class="section-title">
+    <h3>Academic</h3>
+    <h2>Education</h2>
+  </div>
+
+  <div class="card">
+    <h3>BSc Computer Science</h3>
+    <p>Staffordshire University, United Kingdom</p>
+    <p class="muted">Completed 2025</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    Open to junior / graduate roles, agency work, and freelance projects.<br>
+    Email:
+    <a href="mailto:usamakayani70@gmail.com">usamakayani70@gmail.com</a>
+  </p>
+</footer>
+
+</div>
 </body>
 </html>
 
