@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Usama Bin Saeed | Web Developer, WordPress & SEO</title>
+  <title>Usama Bin Saeed | Web Developer & SEO Specialist</title>
 
   <style>
     :root {
-      --bg: #0f172a;
+      --bg: #020617;
       --card: #020617;
       --text: #e5e7eb;
       --muted: #94a3b8;
@@ -22,72 +22,89 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: linear-gradient(180deg, #020617, #020617);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     .container {
       max-width: 1100px;
       margin: auto;
-      padding: 32px 20px 60px;
+      padding: 32px 20px 80px;
     }
 
-    header {
+    /* HERO */
+    .hero {
       text-align: center;
-      padding: 60px 20px;
+      padding: 80px 20px 60px;
     }
 
-    header h1 {
-      font-size: clamp(32px, 5vw, 46px);
-      margin-bottom: 10px;
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 52px);
+      margin-bottom: 14px;
     }
 
-    header p {
+    .hero h2 {
+      font-size: 20px;
+      font-weight: normal;
       color: var(--muted);
-      max-width: 720px;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 760px;
       margin: auto;
       font-size: 18px;
+      color: var(--muted);
     }
 
-    .info {
-      margin-top: 20px;
+    .meta {
+      margin-top: 22px;
       font-size: 14px;
       color: var(--muted);
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 22px;
       flex-wrap: wrap;
     }
 
+    /* SECTIONS */
     section {
-      margin-top: 70px;
+      margin-top: 90px;
     }
 
-    h2 {
+    .section-title {
+      margin-bottom: 30px;
+    }
+
+    .section-title h3 {
       font-size: 14px;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       color: var(--muted);
-      margin-bottom: 24px;
+      margin-bottom: 6px;
+    }
+
+    .section-title h2 {
+      font-size: 28px;
+      margin: 0;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
+      gap: 26px;
     }
 
     .card {
-      background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 26px;
+      border-radius: 16px;
+      padding: 28px;
       transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
     }
 
     .card:hover {
-      transform: translateY(-6px);
+      transform: translateY(-8px);
       border-color: var(--accent);
-      box-shadow: 0 20px 40px rgba(56,189,248,.15);
+      box-shadow: 0 20px 45px rgba(56,189,248,.18);
     }
 
     ul {
@@ -96,17 +113,17 @@
     }
 
     li {
-      margin: 8px 0;
+      margin: 10px 0;
       color: var(--muted);
     }
 
     footer {
-      margin-top: 80px;
-      padding-top: 30px;
+      margin-top: 100px;
+      padding-top: 40px;
       border-top: 1px solid var(--border);
       text-align: center;
-      font-size: 14px;
       color: var(--muted);
+      font-size: 14px;
     }
 
     a {
@@ -124,57 +141,62 @@
   <div class="container">
 
     <!-- HERO -->
-    <header>
+    <section class="hero">
       <h1>Usama Bin Saeed</h1>
+      <h2>Web Developer · WordPress Specialist · SEO-Focused Builder</h2>
       <p>
-        Web Developer specialising in WordPress, SEO, and performance-focused websites.
-        I build clean, responsive, and search-engine-friendly web experiences.
+        I build modern, responsive websites with a strong focus on WordPress,
+        clean development practices, and search-engine optimisation.
       </p>
-
-      <div class="info">
-        <span>📍 Nottingham, United Kingdom</span>
-        <span>💼 Web Development · WordPress · SEO</span>
+      <div class="meta">
+        <span>📍 Nottingham, UK</span>
         <span>🎓 BSc Computer Science</span>
+        <span>💼 1+ Year Practical Experience</span>
       </div>
-    </header>
+    </section>
 
     <!-- ABOUT -->
     <section>
-      <h2>About Me</h2>
+      <div class="section-title">
+        <h3>Introduction</h3>
+        <h2>About Me</h2>
+      </div>
       <div class="card">
         <p>
-          I am a graduate web developer with over one year of hands-on experience working with
-          WordPress websites, content publishing, and SEO-focused optimisation.
+          I am a graduate web developer with hands-on experience building,
+          maintaining, and optimising WordPress websites for service-based
+          and B2B use cases.
         </p>
         <p>
-          My work includes building pages using existing design systems, maintaining live websites,
-          applying technical SEO best practices, and ensuring strong performance and accessibility
-          across devices.
+          My work spans structured page builds, content publishing,
+          technical SEO hygiene, and performance-focused improvements.
+          I value clean markup, consistency, and long-term maintainability.
         </p>
       </div>
     </section>
 
     <!-- SKILLS -->
     <section>
-      <h2>Core Skills</h2>
+      <div class="section-title">
+        <h3>Capabilities</h3>
+        <h2>Core Skills</h2>
+      </div>
       <div class="grid">
         <div class="card">
           <h3>Web Development</h3>
           <ul>
-            <li>HTML5 & CSS3 (semantic, clean markup)</li>
+            <li>HTML5 & CSS3 (semantic, accessible markup)</li>
             <li>Responsive & mobile-first layouts</li>
-            <li>Performance & layout QA</li>
-            <li>Cross-browser testing</li>
+            <li>Cross-browser testing & QA</li>
           </ul>
         </div>
 
         <div class="card">
           <h3>WordPress</h3>
           <ul>
-            <li>Custom page builds & content publishing</li>
+            <li>Custom page creation & content publishing</li>
             <li>Theme customisation & maintenance</li>
-            <li>Plugin updates & staging environments</li>
-            <li>SEO-friendly formatting</li>
+            <li>Plugin updates & staging workflows</li>
           </ul>
         </div>
 
@@ -184,7 +206,6 @@
             <li>On-page & technical SEO</li>
             <li>Internal linking & content structure</li>
             <li>Entity-based & semantic SEO</li>
-            <li>Google Search Console basics</li>
           </ul>
         </div>
       </div>
@@ -192,33 +213,40 @@
 
     <!-- EXPERIENCE -->
     <section>
-      <h2>Experience</h2>
+      <div class="section-title">
+        <h3>Background</h3>
+        <h2>Experience</h2>
+      </div>
       <div class="card">
         <strong>WordPress Web Developer & SEO (Freelance / Part-Time)</strong>
         <ul>
-          <li>Built and maintained WordPress websites for service-based businesses</li>
+          <li>Built and maintained WordPress websites for service businesses</li>
           <li>Published SEO-optimised blogs, case studies, and service pages</li>
-          <li>Performed HTML/CSS tweaks and layout updates</li>
-          <li>Supported ongoing technical SEO hygiene</li>
+          <li>Applied technical SEO best practices</li>
+          <li>Performed HTML/CSS layout improvements</li>
         </ul>
       </div>
     </section>
 
     <!-- EDUCATION -->
     <section>
-      <h2>Education</h2>
+      <div class="section-title">
+        <h3>Academic</h3>
+        <h2>Education</h2>
+      </div>
       <div class="card">
         <strong>BSc Computer Science</strong><br />
-        Staffordshire University, United Kingdom<br />
+        Staffordshire University, UK<br />
         <span style="color: var(--muted);">Completed 2025</span>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- CONTACT -->
     <footer>
       <p>
-        Open to junior / graduate roles, agency work, and freelance opportunities.<br />
-        Email: <a href="mailto:usamakayani70@gmail.com">usamakayani70@gmail.com</a>
+        Open to junior / graduate roles, agency work, and freelance projects.<br />
+        Email:
+        <a href="mailto:usamakayani70@gmail.com">usamakayani70@gmail.com</a>
       </p>
     </footer>
 
